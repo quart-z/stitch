@@ -12,24 +12,27 @@ function App() {
         <div className = "container">
           <nav className="">
             {/* Nav section , <NavBar /> */}
-            <img src="/logo512.png" href="index.html" className="App-logo logo logo_box hue-shift">
+            <img src="/logo512.png" href="index.html" className="App-logo logo_box hue-shift">
             </img>
             <ul className="nav-list">
               <li className="nav-item">
                 <a href="/" className="nav-link">
-                  About
+                  Docs
                 </a>
               </li>
               <li className="nav-item">
                 <a href="/" className="nav-link">
-                  Case Study
+                  Blog
                 </a>
               </li>
               <li className="nav-item">
                 <a href="/" className="nav-link">
-                  FAQ
+                  Github
                 </a>
               </li>
+              <img src="/sun.png" href="index.html" className=" sun_logo sun_logo_box hue-shift">
+              </img>
+              
             </ul>
           </nav>
         </div>

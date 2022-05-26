@@ -1,67 +1,77 @@
 /* Navigation Bar */
 
 header {
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
-  background-color: black;
-  font-size: px;
 }
 
 section {
   z-index: 1;
 }
 
+.App {
+  background-color: black;
+}
+
+/* Navigation Bar */
+
 nav {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 15px 30px 15px 20px;
   align-items: center;
-  display: inline-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.logo_box {
+  height: 50px;
+  width: 50px;
+  pointer-events: none;
+}
+
+.sun_logo_box {
+  height: 25px;
+  width: 25px;
+  margin-left: 40px;
+  pointer-events: none;
+}
+
+.sun_logo {
+  filter: invert(100%);
 }
 
 .nav-list {
   display: flex;
   color: white;
+  font-size: 16px;
   list-style: none;
-  justify-content: space-between;
-  align-content: flex-end;
-  margin-left: 20rem;
+  align-items: center;
 }
 
 .nav-item {
-  text-decoration-color: white;
+  text-decoration-color: #F8F8FF;
   list-style: none;
 }
 
 
 /* Space between items */
 .nav-item + .nav-item {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: white;
-  list-style: none;
+  color: #F8F8FF;
 }
 
 .container {
   display: flex;
-  color: white;
 }
 
-
-.logo_box {
-  height: 10vmin;
-  width: 10vmin;
-  padding: ;
-  pointer-events: none;
-}
-
-.logo {
-  margin-top: rem;
-  display: block;
-}
 
 
 
@@ -73,7 +83,7 @@ nav {
 .landing_page {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom right, #3b4679, #2b3153);
+  /*background-image: linear-gradient(to bottom right, #3b4679, #2b3153); */
   position: relative;
   overflow: hidden;
   display: flex;
