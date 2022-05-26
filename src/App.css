@@ -82,6 +82,8 @@ nav {
 /// Landing Page /// 
 */
 
+/* Title and Description */
+
 .title_box {
   display: flex;
   flex-direction: column;
@@ -111,6 +113,8 @@ h2.title_item {
   width: 600px;
 }
 
+/* Version Box */
+
 .version_content_box {
   display: flex;
   flex-direction: column;
@@ -120,6 +124,7 @@ h2.title_item {
   gap: 0px;
   height: 50px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .version_box_glow {
@@ -134,7 +139,11 @@ h2.title_item {
   animation: tilt 3s infinite linear;
 }
 
-/* Tilts glow back and fourth very slightly */
+/* 
+  Used for : .version_box_glow
+  Desc : Tilts glow back and fourth very slightly 
+*/
+
 @keyframes tilt {
   0% 50% 100% {
     transform: rotate(0deg);
@@ -150,7 +159,6 @@ h2.title_item {
 .version_content_box:hover .version_box_glow {
   transition-property: opacity;
   transition-duration: 500ms;
-
   opacity: 1;
 }
 
@@ -181,8 +189,8 @@ h2.title_item {
 }
 
 .version_item_logo {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   pointer-events: none;
 }
 
@@ -196,9 +204,57 @@ h2.title_item {
 }
 
 
+/* Background Stitches */
+.gradient1 {
+    position: absolute;
+    background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #0000FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+    border-radius: 50%;
+    font-size: 250px;
+    height: 1em;
+    width: 1em;
+    filter: blur(32px);
+    opacity: .2;
+    animation: ease_in_right 5s infinite linear;
+}
 
 
 
+.gradient2 {
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #0000FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+  border-radius: 50%;
+  font-size: 250px;
+  height: 1em;
+  width: 1em;
+  filter: blur(32px);
+  opacity: .2;
+  animation: ease_in_left 5s infinite linear;
+}
+
+@keyframes ease_in_left {
+  0% 100% {
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateY(20%);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes ease_in_right {
+  0% 100% {
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateY(-100px);
+    transform: translateX(-100px);
+  }
+}
 
 
 
