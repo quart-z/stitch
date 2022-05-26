@@ -41,10 +41,10 @@ function App() {
       <div className = "landing_page">
       {/* Content section , <Content /> */}
         <div className = "title_box">
-          <h1 className= "title_box">
+          <h1 className= "title_item">
           Style your components with confidence
           </h1>
-          <h2 className= "title_box">
+          <h2 className= "title_item">
           CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best in calss developer experience
           </h2>
         </div>
@@ -57,7 +57,9 @@ function App() {
             <p className = "version_item"> Stitches v10.0829 </p>
             <p className = "version_item"> I </p>
             <p className = "version_item"> See what's new -> </p>
-            
+
+          </div>
+          <div className = "version_box_glow">
           </div>
         </div>
       </div>

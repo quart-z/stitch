@@ -91,7 +91,7 @@ nav {
   margin: 10px 0 10px 0;
 }
 
-h1.title_box {
+h1.title_item {
   color: white;
   font-family: inter;
   font-weight: 700;
@@ -101,7 +101,7 @@ h1.title_box {
   width: 550px;
 }
 
-h2.title_box {
+h2.title_item {
   color: gray;
   font-family: inter;
   font-weight: 500;
@@ -119,13 +119,53 @@ h2.title_box {
   align-items: center;
   gap: 0px;
   height: 50px;
+  margin-top: 50px;
 }
 
+.version_box_glow {
+  position: absolute;
+  /*padding: 1px;*/
+  background-image: linear-gradient(to right, darkred,blueviolet);  width: 50%;
+  height: 50px;
+  filter: blur(8px);
+  opacity: .6;
+  transition-property: opacity;
+  transition-duration: 1000ms;
+  animation: tilt 3s infinite linear;
+}
+
+/* Tilts glow back and fourth very slightly */
+@keyframes tilt {
+  0% 50% 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+.version_content_box:hover .version_box_glow {
+  transition-property: opacity;
+  transition-duration: 500ms;
+
+  opacity: 1;
+}
+
+
 .version_box {
+  position: relative;
+  background-color: black;
+
   align-items: center;
   display: flex;
   width: 50%;
+  height: 50px;
   justify-content: center;
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .version_item {
