@@ -1,10 +1,105 @@
+/* Navigation Bar */
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: black;
+  font-size: px;
+}
+
+section {
+  z-index: 1;
+}
+
+nav {
+  padding: 1rem 1rem 1rem 1rem;
+  align-items: center;
+  display: inline-flex;
+}
+
+.nav-list {
+  display: flex;
+  color: white;
+  list-style: none;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-left: 20rem;
+}
+
+.nav-item {
+  text-decoration-color: white;
+  list-style: none;
+}
+
+
+/* Space between items */
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  color: white;
+}
+
+
+.logo_box {
+  height: 10vmin;
+  width: 10vmin;
+  padding: ;
+  pointer-events: none;
+}
+
+.logo {
+  margin-top: rem;
+  display: block;
+}
+
+
+
+
+
+
+
+/* Main Content */
+.landing_page {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #3b4679, #2b3153);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,16 +108,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
