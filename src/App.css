@@ -137,7 +137,7 @@ h2.title_item {
   opacity: .6;
   transition-property: opacity;
   transition-duration: 1000ms;
-  animation: tilt 3s infinite linear;
+  animation: tilt 5s infinite linear;
 }
 
 /* 
@@ -215,7 +215,7 @@ h2.title_item {
     width: 1em;
     filter: blur(32px);
     opacity: .2;
-    animation: ease_in_right 5s infinite linear;
+    animation: ease_in_right 7s infinite linear;
 }
 
 
@@ -232,7 +232,7 @@ h2.title_item {
   width: 1em;
   filter: blur(32px);
   opacity: .2;
-  animation: ease_in_left 5s infinite linear;
+  animation: ease_in_left 7s infinite linear;
 }
 
 @keyframes ease_in_left {
@@ -346,10 +346,12 @@ Breakpoints
 
   .gradient1 {
     font-size: 450px;
+    filter: blur(60px);
   }
 
   .gradient2 {
     font-size: 450px;
+    filter: blur(60px);
   }
 
 }

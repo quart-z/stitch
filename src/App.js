@@ -16,17 +16,17 @@ function App() {
             </img>
             <ul className="nav-list">
               <li className="nav-item">
+                <a href="https://www.woodyard.dev/" className="nav-link">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
                 <a href="/" className="nav-link">
                   Docs
                 </a>
               </li>
               <li className="nav-item">
-                <a href="/" className="nav-link">
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/" className="nav-link">
+                <a href="https://github.com/quart-z/stitch" className="nav-link">
                   Github
                 </a>
               </li>
