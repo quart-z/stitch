@@ -130,7 +130,8 @@ h2.title_item {
 .version_box_glow {
   position: absolute;
   /*padding: 1px;*/
-  background-image: linear-gradient(to right, darkred,blueviolet);  width: 50%;
+  background-image: linear-gradient(to right, darkred,blueviolet);  
+  width: 500px;
   height: 50px;
   filter: blur(8px);
   opacity: .6;
@@ -169,7 +170,7 @@ h2.title_item {
 
   align-items: center;
   display: flex;
-  width: 50%;
+  width: 500px;
   height: 50px;
   justify-content: center;
   border-radius: 10px;
@@ -185,7 +186,7 @@ h2.title_item {
 }
 
 .version_item + .version_item {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .version_item_logo {
@@ -255,6 +256,108 @@ h2.title_item {
     transform: translateX(-100px);
   }
 }
+
+
+/*  /////
+
+Breakpoints 
+
+    ///// */
+
+
+@media screen and (max-width: 650px) {
+
+}
+
+/* Small Devices */
+@media screen and (min-width: 600px) {
+  .projects_main_box {
+    
+  }
+
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  h1.title_item {
+    font-size: 36px;
+    width: 450px;
+  }
+
+  h2.title_item {
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .version_box {
+    width: 300px;
+  }
+
+  .version_box_glow {
+    width: 300px;
+  }
+
+  .version_item {
+    font-size: 12px;
+  }
+
+  .version_item_logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .version_item + .version_item {
+    margin-left: 10px;
+  }
+}
+
+/* Large Devices, laptops/desktops */
+@media screen and (min-width: 992px) {
+
+
+}
+
+/* iPhone X */
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+{ 
+  h1.title_item {
+    font-size: 36px;
+    width: 350px;
+  }
+
+  h2.title_item {
+    font-size: 16px;
+    width: 350px;
+  }
+
+  .version_box {
+    width: 80%;
+  }
+
+  .version_box_glow {
+    width: 80%;
+  }
+
+  .version_item {
+    font-size: 12px;
+  }
+
+  .version_item_logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .version_item + .version_item {
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
 
 
 
