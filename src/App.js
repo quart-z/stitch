@@ -53,7 +53,7 @@ function App() {
           Style your components with confidence
           </h1>
           <h2 className= "title_item">
-          CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best in calss developer experience
+          CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best in class developer experience
           </h2>
         </div>
 

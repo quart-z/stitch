@@ -313,7 +313,44 @@ Breakpoints
 
 /* Large Devices, laptops/desktops */
 @media screen and (min-width: 992px) {
+  h1.title_item {
+    font-size: 56px;
+    width: 900px;
+  }
 
+  h2.title_item {
+    font-size: 30px;
+    width: 800px;
+  }
+
+  .version_box {
+    width: 600px;
+  }
+
+  .version_box_glow {
+    width: 600px;
+  }
+
+  .version_item {
+    font-size: 16px;
+  }
+
+  .version_item_logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .version_item + .version_item {
+    margin-left: 80px;
+  }
+
+  .gradient1 {
+    font-size: 450px;
+  }
+
+  .gradient2 {
+    font-size: 450px;
+  }
 
 }
 
