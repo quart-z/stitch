@@ -137,7 +137,7 @@ h2.title_item {
   opacity: .6;
   transition-property: opacity;
   transition-duration: 1000ms;
-  animation: tilt 5s infinite linear;
+  animation: tilt 7s infinite linear;
 }
 
 /* 
@@ -196,12 +196,62 @@ h2.title_item {
 }
 
 
+/* Stats box */
+
+.stats_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.stats_item {
+  height: 200px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  list-style: none;
+  align-items: center;
+}
+
+h1.stats_title {
+  display: flex;
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+}
+
+h2.stats_title {
+  display: flex;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+
 /* Main Content */
 .landing_page {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   /*background-image: linear-gradient(to bottom right, #3b4679, #2b3153); */
-  align-items: center;
   z-index: 1;
+}
+
+.section_divider {
+  display: flex;
+  border: 1px solid gray;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50px;
+  align-self: center;
 }
 
 
@@ -210,7 +260,7 @@ h2.title_item {
     position: absolute;
     background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #0000FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
     border-radius: 50%;
-    font-size: 250px;
+    font-size: 200px;
     height: 1em;
     width: 1em;
     filter: blur(32px);
@@ -227,7 +277,7 @@ h2.title_item {
   right: 0;
   background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #0000FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
   border-radius: 50%;
-  font-size: 250px;
+  font-size: 200px;
   height: 1em;
   width: 1em;
   filter: blur(32px);
@@ -279,6 +329,18 @@ Breakpoints
 
 /* Medium Devices */
 @media screen and (max-width: 768px) {
+  .gradient1 {
+    font-size: 150px;
+  }
+
+  .gradient2 {
+    font-size: 150px;
+  }
+
+  .section_divider {
+    width: 30px;
+  }
+
   h1.title_item {
     font-size: 36px;
     width: 450px;
@@ -309,6 +371,16 @@ Breakpoints
   .version_item + .version_item {
     margin-left: 10px;
   }
+
+  h1.stats_title {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  h2.stats_title {
+    font-size: 20px;
+  }
+
 }
 
 /* Large Devices, laptops/desktops */
@@ -345,12 +417,12 @@ Breakpoints
   }
 
   .gradient1 {
-    font-size: 450px;
+    font-size: 250px;
     filter: blur(60px);
   }
 
   .gradient2 {
-    font-size: 450px;
+    font-size: 250px;
     filter: blur(60px);
   }
 

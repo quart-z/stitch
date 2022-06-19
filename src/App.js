@@ -70,6 +70,37 @@ function App() {
           </div>
         </div>
 
+        <div className="section_divider">
+          
+        </div>
+
+        {/* Stats Box, and items */}
+        <div className = "stats_content_box">
+          <div className = "stats_box">
+
+            <div className = "stats_item">
+              <h1 className= "stats_title"> Bundle Size (Core) </h1>
+              <h2 className = "stats_title"> 5.9kb </h2>
+            </div>
+
+            <div className = "stats_item">
+              <h1 className= "stats_title"> Bundle Size (React) </h1>
+              <h2 className = "stats_title"> 6.1kb </h2>
+            </div>
+
+            <div className = "stats_item">
+              <h1 className= "stats_title"> Runtime Interpolations </h1>
+              <h2 className = "stats_title"> Zero </h2>
+            </div>
+
+            <div className = "stats_item">
+              <h1 className= "stats_title"> Variants </h1>
+              <h2 className = "stats_title"> ∞ </h2>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </body>
   );
