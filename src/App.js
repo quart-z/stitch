@@ -38,13 +38,11 @@ function App() {
           {/* End of navbar section */}
         </div>
       </header>
-      <div className = "landing_page">
-      {/* Content section , <Content /> */}
+      <div className = "section1_box">
+      {/* Section 1 - Content section , <Content /> */}
 
         {/* Background gradients */}
         <div className="gradient1">
-        </div>
-        <div className="gradient2">
         </div>
 
         {/* Title, description boxes and items */}
@@ -69,12 +67,20 @@ function App() {
           <div className = "version_box_glow">
           </div>
         </div>
+      </div>
 
+      <div className="section_divider_box">
         <div className="section_divider">
-          
+        </div>
+      </div>
+
+      <div className="section2_box">
+
+        {/* Background gradients */}
+        <div className="gradient2">
         </div>
 
-        {/* Stats Box, and items */}
+        {/* Section 2 - Stats Box, and items */}
         <div className = "stats_content_box">
           <div className = "stats_box">
 

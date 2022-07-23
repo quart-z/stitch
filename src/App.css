@@ -4,6 +4,9 @@
 
 
 body {
+  position: absolute;
+  z-index: -1000;
+  width: 100%;
   background-color: #101010;
 }
 
@@ -123,7 +126,7 @@ h2.title_item {
   align-items: center;
   gap: 0px;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 80px;
   cursor: pointer;
 }
 
@@ -236,52 +239,65 @@ h2.stats_title {
 }
 
 
-/* Main Content */
-.landing_page {
+/* Section1 Content */
+.section1_box {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: column;
+  height: 600px;
   width: 100%;
   /*background-image: linear-gradient(to bottom right, #3b4679, #2b3153); */
-  z-index: 1;
 }
 
-.section_divider {
+.section2_box {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.section_divider_box {
+  position: relative;
   display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 100%;
+}
+.section_divider {
   border: 1px solid gray;
-  margin-top: 100px;
-  margin-bottom: 100px;
   width: 50px;
-  align-self: center;
 }
 
 
 /* Background Stitches */
 .gradient1 {
-    position: absolute;
-    background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #0000FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
-    border-radius: 50%;
-    font-size: 200px;
-    height: 1em;
-    width: 1em;
-    filter: blur(32px);
-    opacity: .2;
-    animation: ease_in_right 7s infinite linear;
+  position: absolute;
+  z-index: -1;
+  background: conic-gradient(from 180deg at 50% 50%, #16CAE6 0deg, #561AD8 120.07deg, #16CAE6 179.52deg, #5306FA 241.65deg, #7F0FE6 299.6deg, #AD22CC 360deg);
+  border-radius: 80%;
+  font-size: 200px;
+  height: 2em;
+  width: 2em;
+  filter: blur(72px);
+  opacity: .4;
+  animation: ease_in_right 7s infinite linear;
 }
 
 
 
 .gradient2 {
-
   position: absolute;
   bottom: 0;
   right: 0;
-  background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #0000FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
-  border-radius: 50%;
+  z-index: -1;
+  background: conic-gradient(from 180deg at 50% 50%, #16CAE6 0deg, #561AD8 120.07deg, #16CAE6 179.52deg, #5306FA 241.65deg, #7F0FE6 299.6deg, #AD22CC 360deg);
+  border-radius: 80%;
   font-size: 200px;
-  height: 1em;
-  width: 1em;
-  filter: blur(32px);
-  opacity: .2;
+  height: 2em;
+  width: 2em;
+  filter: blur(72px);
+  opacity: .4;
   animation: ease_in_left 7s infinite linear;
 }
 
