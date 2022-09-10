@@ -4,10 +4,22 @@
 
 
 body {
+ /* Variables */
+  --primary-background: #101010;
+
+  background-color: var(--primary-background);
   position: absolute;
   z-index: -1000;
+  height: 100%;
   width: 100%;
-  background-color: #101010;
+}
+
+#light {
+  --primary-background: white;
+}
+
+#dark {
+  --primary-background: #101010;
 }
 
 /* Navigation Bar */
@@ -44,9 +56,8 @@ nav {
 
 .sun_logo_box {
   height: 25px;
-  width: 25px;
+  width: 50px;
   margin-left: 40px;
-  pointer-events: none;
 }
 
 .sun_logo {
@@ -55,14 +66,18 @@ nav {
 
 .nav-list {
   display: flex;
-  color: white;
   font-size: 16px;
   list-style: none;
   align-items: center;
 }
+#light .nav-link {
+  color: black;
+}
+#dark .nav-link {
+  color: white;
+}
 
 .nav-item {
-  text-decoration-color: #F8F8FF;
   list-style: none;
 }
 
@@ -74,7 +89,12 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: #F8F8FF;
+}
+#light .nav-link {
+  color: black;
+}
+#dark .nav-link {
+  color: white;
 }
 
 .container {
@@ -114,6 +134,13 @@ h2.title_item {
   align-self: center;
   text-align: center;
   width: 600px;
+}
+
+#light .title_item {
+  color: black;
+}
+#dark .title_item {
+  color: white;
 }
 
 /* Version Box */
@@ -236,6 +263,13 @@ h2.stats_title {
   color: white;
   font-size: 32px;
   text-align: center;
+}
+
+#light .stats_title {
+  color: black;
+}
+#dark .stats_title {
+  color: white;
 }
 
 

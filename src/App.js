@@ -4,9 +4,26 @@ import './App.css';
 import Content from "./components/content";
 import NavBar from "./components/navbar";
 
+import {useState} from 'react';
+import ReactSwitch from "react-switch";
+import { createContext } from "react";
+export const ThemeContext = createContext(null);
+
+
+
+
+
 function App() {
+
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light")); /* If curr theme is light set to dark, if dark set to light etc. */
+  };
+
+
   return (
-    <body className="">
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <body id= {theme}>
 
       <header className="">
         <div className = "container">
@@ -30,8 +47,9 @@ function App() {
                   Github
                 </a>
               </li>
-              <img src="/sun.png" href="index.html" className=" sun_logo sun_logo_box">
-              </img>
+              <div alt="darkmode sun" src="/sun.png" href="index.html" className=" sun_logo sun_logo_box" id = "mode">
+                <ReactSwitch onChange = {toggleTheme} checked = {theme == "dark"} />
+              </div>
               
             </ul>
           </nav>
@@ -109,6 +127,7 @@ function App() {
 
       </div>
     </body>
+    </ThemeContext.Provider>
   );
 }
 
