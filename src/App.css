@@ -6,11 +6,10 @@
 body {
  /* Variables */
   --primary-background: #101010;
-
+  overflow-x: hidden;
   background-color: var(--primary-background);
   position: absolute;
   z-index: -1000;
-  height: 100%;
   width: 100%;
 }
 
@@ -169,6 +168,12 @@ h2.title_item {
   transition-duration: 1000ms;
   animation: tilt 7s infinite linear;
 }
+#light .version_box_glow {
+  background-image: linear-gradient(to right, cyan,cyan);  
+}
+#dark .version_box_glow {
+}
+
 
 /* 
   Used for : .version_box_glow
@@ -205,6 +210,11 @@ h2.title_item {
   justify-content: center;
   border-radius: 10px;
   z-index: 1;
+}
+#light .version_box {
+  background-image: linear-gradient(to right, darkcyan,lightgreen);  
+}
+#dark .version_box {
 }
 
 .version_item {
@@ -288,6 +298,7 @@ h2.stats_title {
   position: relative;
   z-index: 5;
   width: 100%;
+  height: 300px;
 }
 
 .section_divider_box {
@@ -317,6 +328,10 @@ h2.stats_title {
   opacity: .4;
   animation: ease_in_right 7s infinite linear;
 }
+#light .gradient1 {
+  background: linear-gradient(to right, cyan,#71e0aa);  
+}
+
 
 
 
@@ -333,6 +348,9 @@ h2.stats_title {
   filter: blur(72px);
   opacity: .4;
   animation: ease_in_left 7s infinite linear;
+}
+#light .gradient2 {
+  background: linear-gradient(to right, #71e0aa,cyan);  
 }
 
 @keyframes ease_in_left {
