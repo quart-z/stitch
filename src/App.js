@@ -47,7 +47,7 @@ function App() {
                   Github
                 </a>
               </li>
-              <div alt="darkmode sun" src="/sun.png" href="index.html" className=" sun_logo sun_logo_box" id = "mode">
+              <div className="invert-switch-box invert-switch">
                 <ReactSwitch onChange = {toggleTheme} checked = {theme == "dark"} />
               </div>
               

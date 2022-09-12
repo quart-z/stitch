@@ -53,13 +53,13 @@ nav {
   pointer-events: none;
 }
 
-.sun_logo_box {
+.invert-switch-box {
   height: 25px;
   width: 50px;
   margin-left: 40px;
 }
 
-.sun_logo {
+.invert-switch {
   filter: invert(100%);
 }
 
@@ -382,21 +382,57 @@ Breakpoints
 
     ///// */
 
-
-@media screen and (max-width: 650px) {
-
-}
-
-/* Small Devices */
-@media screen and (min-width: 600px) {
-  .projects_main_box {
-    
+/* Smallest Devices */
+@media screen and (max-width: 375px) {
+  h1.title_item {
+    font-size: 36px;
+    width: 350px;
+    color: blue;
   }
 
+  h2.title_item {
+    font-size: 16px;
+    width: 350px;
+  }
+
+  .invert-switch-box {
+    margin-left: 20px;
+  }
+
+  .version_box {
+    width: 80%;
+  }
+
+  .version_box_glow {
+    width: 80%;
+  }
+
+  .version_item {
+    font-size: 12px;
+  }
+
+  .version_item_logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .version_item + .version_item {
+    margin-left: 10px;
+  }
+
+  h1.stats_title {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  h2.stats_title {
+    font-size: 20px;
+  }
 }
 
+
 /* Medium Devices */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
   .gradient1 {
     font-size: 150px;
   }
@@ -495,56 +531,6 @@ Breakpoints
   }
 
 }
-
-/* iPhone X */
-@media only screen 
-and (device-width : 375px) 
-and (device-height : 812px) 
-{ 
-  h1.title_item {
-    font-size: 36px;
-    width: 350px;
-  }
-
-  h2.title_item {
-    font-size: 16px;
-    width: 350px;
-  }
-
-  .version_box {
-    width: 80%;
-  }
-
-  .version_box_glow {
-    width: 80%;
-  }
-
-  .version_item {
-    font-size: 12px;
-  }
-
-  .version_item_logo {
-    height: 20px;
-    width: 20px;
-  }
-
-  .version_item + .version_item {
-    margin-left: 10px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .App {
